@@ -27,37 +27,84 @@ const cookieAudio = new Audio('assets/09-cookie.mp3');
     // update DOM to reflect new value(s)
     freeze.addEventListener('click', () => {
         freezeAudio.play();
+        freeze.classList.add('image-animate');
     });
 
     terminator.addEventListener('click', () => {
         terminatorAudio.play();
+        terminator.classList.add('image-animate');
     });
 
     behind.addEventListener('click', () => {
         behindAudio.play();
+        behind.classList.add('image-animate');
     });
 
     choppa.addEventListener('click', () => {
         choppaAudio.play();
+        choppa.classList.add('image-animate');
     });
 
     questions.addEventListener('click', () => {
         questionsAudio.play();
+        questions.classList.add('image-animate');
     });
 
     bathroom.addEventListener('click', () => {
         bathroomAudio.play();
+        bathroom.classList.add('image-animate');
     });
 
     daddy.addEventListener('click', () => {
         daddyAudio.play();
+        daddy.classList.add('image-animate');
     });
 
     tumor.addEventListener('click', () => {
         tumorAudio.play();
+        tumor.classList.add('image-animate');
     });
+
+    tumor.addEventListener('mouseup', () =>{
+        tumor.classList.remove('image-animate');
+    })
 
     cookie.addEventListener('click', () => {
         cookieAudio.play();
+        cookie.classList.add('image-animate');
     });
 
+    document.addEventListener('keydown', (e) => {
+        if (e.key == 1){
+            freezeAudio.play();
+            freeze.classList.add('image-animate');
+        } else if (e.key == 2){
+            terminatorAudio.play();
+            terminator.classList.add('image-animate');
+            
+        } else if (e.key == 3){
+            behindAudio.play();
+            behind.classList.add('image-animate');
+        } else if (e.key == 4){
+            choppaAudio.play();
+            choppa.classList.add('image-animate');
+        } else if (e.key == 5){
+            questionsAudio.play();
+            questions.classList.add('image-animate');
+        } else if (e.key == 6){
+            bathroomAudio.play();
+            bathroom.classList.add('image-animate');
+        } else if (e.key == 7){
+            daddyAudio.play();
+            daddy.classList.add('image-animate');
+        } else if (e.key == 8){
+            tumorAudio.play();
+            tumor.classList.add('image-animate');
+        } else if (e.key == 9){
+            cookieAudio.play();
+            cookie.classList.add('image-animate');
+        }
+
+        
+
+    });
