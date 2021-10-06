@@ -25,86 +25,99 @@ const cookieAudio = new Audio('assets/09-cookie.mp3');
     // get user input(s)
     // do any needed work with the value(s)
     // update DOM to reflect new value(s)
-    freeze.addEventListener('click', () => {
+freeze.addEventListener('click', () => {
+    freezeAudio.play();
+    freeze.classList.add('image-animate');
+    setTimeout(() => {freeze.classList.remove('image-animate');}, 4001);
+});
+
+terminator.addEventListener('click', () => {
+    terminatorAudio.play();
+    terminator.classList.add('image-animate');
+    setTimeout(() => {terminator.classList.remove('image-animate');}, 4001);
+});
+
+behind.addEventListener('click', () => {
+    behindAudio.play();
+    behind.classList.add('image-animate');
+    setTimeout(() => {behind.classList.remove('image-animate');}, 4001);
+});
+
+choppa.addEventListener('click', () => {
+    choppaAudio.play();
+    choppa.classList.add('image-animate');
+    setTimeout(() => {choppa.classList.remove('image-animate');}, 4001);
+});
+
+questions.addEventListener('click', () => {
+    questionsAudio.play();
+    questions.classList.add('image-animate');
+    setTimeout(() => {questions.classList.remove('image-animate');}, 4001);
+});
+
+bathroom.addEventListener('click', () => {
+    bathroomAudio.play();
+    bathroom.classList.add('image-animate');
+    setTimeout(() => {bathroom.classList.remove('image-animate');}, 4001);
+});
+
+daddy.addEventListener('click', () => {
+    daddyAudio.play();
+    daddy.classList.add('image-animate');
+    setTimeout(() => {daddy.classList.remove('image-animate');}, 4001);
+});
+
+tumor.addEventListener('click', () => {
+    tumorAudio.play();
+    tumor.classList.add('image-animate');
+    setTimeout(() => {tumor.classList.remove('image-animate');}, 4001);
+});
+
+cookie.addEventListener('click', () => {
+    cookieAudio.play();
+    cookie.classList.add('image-animate');
+    setTimeout(() => {cookie.classList.remove('image-animate');}, 4001);
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key == 1){
         freezeAudio.play();
         freeze.classList.add('image-animate');
-    });
-
-    terminator.addEventListener('click', () => {
+        setTimeout(() => {freeze.classList.remove('image-animate');}, 4001);
+    } else if (e.key == 2){
         terminatorAudio.play();
         terminator.classList.add('image-animate');
-    });
-
-    behind.addEventListener('click', () => {
+        setTimeout(() => {terminator.classList.remove('image-animate');}, 4001);
+    } else if (e.key == 3){
         behindAudio.play();
         behind.classList.add('image-animate');
-    });
-
-    choppa.addEventListener('click', () => {
+        setTimeout(() => {behind.classList.remove('image-animate');}, 4001);
+    } else if (e.key == 4){
         choppaAudio.play();
         choppa.classList.add('image-animate');
-    });
-
-    questions.addEventListener('click', () => {
+        setTimeout(() => {choppa.classList.remove('image-animate');}, 4001);
+    } else if (e.key == 5){
         questionsAudio.play();
         questions.classList.add('image-animate');
-    });
-
-    bathroom.addEventListener('click', () => {
+        setTimeout(() => {questions.classList.remove('image-animate');}, 4001);
+    } else if (e.key == 6){
         bathroomAudio.play();
         bathroom.classList.add('image-animate');
-    });
-
-    daddy.addEventListener('click', () => {
+        setTimeout(() => {bathroom.classList.remove('image-animate');}, 4001);
+    } else if (e.key == 7){
         daddyAudio.play();
         daddy.classList.add('image-animate');
-    });
-
-    tumor.addEventListener('click', () => {
+        setTimeout(() => {daddy.classList.remove('image-animate');}, 4001);
+    } else if (e.key == 8){
         tumorAudio.play();
         tumor.classList.add('image-animate');
-    });
-
-    tumor.addEventListener('mouseup', () =>{
-        tumor.classList.remove('image-animate');
-    })
-
-    cookie.addEventListener('click', () => {
+        setTimeout(() => {tumor.classList.remove('image-animate');}, 4001);
+    } else if (e.key == 9){
         cookieAudio.play();
         cookie.classList.add('image-animate');
-    });
+        setTimeout(() => {cookie.classList.remove('image-animate');}, 4001);
+    }
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key == 1){
-            freezeAudio.play();
-            freeze.classList.add('image-animate');
-        } else if (e.key == 2){
-            terminatorAudio.play();
-            terminator.classList.add('image-animate');
-            
-        } else if (e.key == 3){
-            behindAudio.play();
-            behind.classList.add('image-animate');
-        } else if (e.key == 4){
-            choppaAudio.play();
-            choppa.classList.add('image-animate');
-        } else if (e.key == 5){
-            questionsAudio.play();
-            questions.classList.add('image-animate');
-        } else if (e.key == 6){
-            bathroomAudio.play();
-            bathroom.classList.add('image-animate');
-        } else if (e.key == 7){
-            daddyAudio.play();
-            daddy.classList.add('image-animate');
-        } else if (e.key == 8){
-            tumorAudio.play();
-            tumor.classList.add('image-animate');
-        } else if (e.key == 9){
-            cookieAudio.play();
-            cookie.classList.add('image-animate');
-        }
+    
 
-        
-
-    });
+});
