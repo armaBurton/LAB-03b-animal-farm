@@ -11,11 +11,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 header {
     background-color: #A2D7D2;
-    height: 110px;
+    height: 80px;
     padding: 0 30px;
     display: flex;
     align-items: center;
@@ -40,13 +41,20 @@ footer {
 .image-size{
     width: 225px;
     height: 225px;
-    border-radius: 3px;;
+    border-radius: 3px;
     object-fit: cover;
+    background-color: black;
 }
 
 .image-opacity{
-    background-color: black;
     opacity: 0.3;
+}
+
+.overlay{
+    background-color: black;
+    width: 225px;
+    height: 225px;
+    border-radius: 3px;
 }
 
 .image-opacity:hover{
@@ -87,5 +95,6 @@ footer {
 
 #instructions{
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
