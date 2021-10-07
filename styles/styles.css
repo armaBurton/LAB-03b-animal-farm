@@ -7,10 +7,10 @@ body {
 }
 
 main {
-    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 header {
@@ -85,4 +85,7 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-
+#instructions{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
